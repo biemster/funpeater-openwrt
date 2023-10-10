@@ -2420,6 +2420,15 @@ define Device/pcs_cr5000
 endef
 TARGET_DEVICES += pcs_cr5000
 
+define Device/peater
+  SOC := qca9533
+  DEVICE_VENDOR := Peater
+  DEVICE_MODEL := QCA9533
+  IMAGE_SIZE := 8000k
+  SUPPORTED_DEVICES += peater 
+endef
+TARGET_DEVICES += peater
+
 define Device/phicomm_k2t
   SOC := qca9563
   DEVICE_VENDOR := Phicomm

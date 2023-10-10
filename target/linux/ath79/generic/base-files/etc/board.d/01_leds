@@ -342,6 +342,10 @@ pcs,cr3000)
 	ucidef_set_led_switch "lan3" "LAN3" "blue:lan3" "switch0" "0x10"
 	ucidef_set_led_switch "lan4" "LAN4" "blue:lan4" "switch0" "0x02"
 	;;
+peater,qca9533)
+	ucidef_set_led_netdev "lan0" "LAN0" "green:lan0" "eth0"
+	ucidef_set_led_netdev "lan1" "LAN1" "green:lan1" "eth1"
+	;;
 qca,ap143-8m|\
 qca,ap143-16m)
 	ucidef_set_led_netdev "wan" "WAN" "green:wan" "eth1"
